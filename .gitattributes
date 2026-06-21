@@ -1,0 +1,5 @@
+# Exclude frontend files from GitHub language stats
+app.js linguist-vendored=true
+index.html linguist-vendored=true
+style.css linguist-vendored=true
+vercel.json linguist-detectable=false

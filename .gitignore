@@ -1,0 +1,24 @@
+# C++ build output
+backend/build/
+*.exe
+*.o
+*.obj
+
+# Node.js
+node_modules/
+frontend/node_modules/
+server/node_modules/
+
+# Frontend build
+frontend/dist/
+
+# Vite cache
+.vite/
+frontend/.vite/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
