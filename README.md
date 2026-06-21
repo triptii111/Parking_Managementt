@@ -1,8 +1,8 @@
-# Parking Management System
+ Parking Management System
 
 A parking lot management system built with a **C++ backend** and a plain HTML/CSS/JS frontend. The C++ server handles all business logic and serves the frontend directly — no Node.js, no React, no build step.
 
-## Features
+Features
 
 - Park and exit vehicles with automatic slot allocation
 - Waiting queue — vehicles auto-assigned when a slot becomes free
@@ -13,57 +13,16 @@ A parking lot management system built with a **C++ backend** and a plain HTML/CS
 - Parking history with search and sort
 - Statistics dashboard with occupancy charts
 
-## Tech Stack
+Tech Stack
 
 | Layer    | Technology                          |
 |----------|-------------------------------------|
 | Backend  | C++17 · cpp-httplib · nlohmann/json |
 | Frontend | HTML · CSS · Vanilla JavaScript     |
 | Build    | CMake + Ninja                       |
-| Deploy   | Docker (Railway / Render)           |
 
-## Project Structure
-
-```text
-├── backend/
-│   ├── src/
-│   │   ├── server.cpp    — HTTP server, all API routes
-│   │   └── parking.h     — Vehicle, Queue, LinkedList, Stack, MergeSort, ParkingLot
-│   ├── include/          — httplib.h, nlohmann/json.hpp
-│   └── CMakeLists.txt
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-├── Dockerfile
-└── README.md
-```
-
-## Deploy on Railway (recommended)
-
-1. Push this repo to GitHub
-2. Go to [railway.app](https://railway.app) → New Project → Deploy from GitHub repo
-3. Select your repo — Railway auto-detects the Dockerfile and deploys
-4. Done. Railway provides a public URL automatically
-
-## Deploy on Render
-
-1. Push this repo to GitHub
-2. Go to [render.com](https://render.com) → New → Web Service → Connect your repo
-3. Set **Environment** to `Docker`
-4. Click Deploy — Render builds and runs the container
-5. Done. Render provides a public URL automatically
-
-## Run Locally (Windows)
-
-```bash
-cd backend
-start.bat
-```
-
-Server starts at `http://localhost:8080`
-
-## API Endpoints
+ 
+API Endpoints
 
 | Method | Endpoint               | Description              |
 |--------|------------------------|--------------------------|
